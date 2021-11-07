@@ -1,0 +1,73 @@
+$avatar_size: 48px;
+.comment {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-self: end;
+    width: 100%;
+    padding: 16px 0;
+    .editBtn {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+}
+
+hr {
+    border: solid 1px black;
+    margin: 0;
+}
+
+.firstPart {
+    margin-right: 16px;
+    img {
+        width: $avatar_size;
+        width: $avatar_size;
+        border-radius: 50%;
+    }
+}
+
+.secondPart {
+    display: flex;
+    flex-direction: column;
+    >* {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: flex-start;
+    }
+    h6 {
+        text-align: left;
+    }
+}
+
+.commentInput {
+    display: flex;
+    flex-direction: column;
+    div {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.commentText {
+    display: flex;
+    flex-direction: column;
+    div {
+        display: flex;
+        flex-direction: row;
+        h6 {
+            margin-top: 8px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.likeButton {
+    cursor: pointer;
+    margin-top: 10px;
+}
